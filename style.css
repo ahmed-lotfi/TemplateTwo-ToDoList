@@ -1,0 +1,111 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+    background-color: white;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#dark-mode-btn {
+    top:0;
+    float: right;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 0 10px;
+    background-color: black;
+    color: white;
+    
+}
+
+#dark-mode-btn:hover{
+    background-color: #00bef3;
+    transition: transform 0.3s ease;
+    transform:scale(1.1);
+    outline:none;
+}
+
+.dark-mode {
+	background-color: #000000;
+	color: #fff;
+}
+
+h1 {
+	text-align: center;
+	margin-top: 30px;
+    font-weight: 800;
+    
+}
+
+#new-task {
+	font-size: 16px;
+	padding: 10px;
+    width:400px;
+	margin-right: 20px;
+	border: 5px outset #00bef3;
+    border-radius: 10px;
+}
+
+#add-task {
+	font-size: 16px;
+	padding: 15px 30px;
+	background-color: #00bef3;
+	color: black;
+	border: none;
+	cursor: pointer;
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+}
+
+.dark-mode #add-task {
+    color: white;
+}
+
+#add-task:hover {
+    background-color: #586eff;
+    transform: scale(1.1);
+}
+
+#task-list {
+	margin:30px 5px;
+	padding:10px 20px;
+	list-style: none;
+    border: 5px inset #0190b8;
+    background-color:#0284a8;
+}
+
+.task {
+	padding: 10px 20px;
+	border: 1px dashed #00bef3;
+    background-color: #586eff;
+    color: black;
+    font-size:18px;
+	margin: 10px;
+}
+
+.task.completed {
+	text-decoration: line-through;
+    color: white;
+}
+
+li.task > button{
+    background-color: rgb(12, 0, 0);
+    color: white;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 5px 10px;
+    font-size: 15px;
+    font-weight: 400;
+    transition: transform 0.3s ease;
+}
+
+.dark-mode li.task > button {
+    background-color: white;
+    color: black;
+}
+li.task > button:hover {
+    background-color: rgb(79, 79, 79);
+    transform: scale(1.1);
+}
